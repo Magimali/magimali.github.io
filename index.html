@@ -1,9 +1,227 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrii Chumak — Applied Physics</title>
+<meta name="description" content="Andrii Chumak, Applied Physics student at Dublin City University. Experimental physics, surface science, and instrumentation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="#top">Andrii Chumak</a>
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="hero-kicker">Applied Physics — Dublin City University</p>
+      <h1>Andrii Chumak</h1>
+      <p class="hero-lede">Third-year physics student working at the bench end of the subject — vacuum systems, sensors, and the instruments that turn a physical effect into a number. Based in Dublin.</p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="mailto:andrii.chumak2@mail.dcu.ie">andrii.chumak2@mail.dcu.ie</a>
+        <a class="btn" href="https://linkedin.com/in/andrii-chumak-622855329" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-graphic" aria-hidden="true">
+      <svg id="tpd-curve" viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg">
+        <!-- axes -->
+        <line x1="50" y1="270" x2="490" y2="270" class="axis-line"/>
+        <line x1="50" y1="270" x2="50" y2="40" class="axis-line"/>
+        <!-- ticks -->
+        <g class="tick-label">
+          <text x="480" y="292">T</text>
+          <text x="22" y="48">rate</text>
+        </g>
+        <!-- desorption curve, drawn on load -->
+        <path id="curve-path" class="curve-path"
+          d="M50,266 C110,264 140,262 165,250 C195,235 205,150 235,105 C255,75 270,68 285,80 C300,92 305,150 325,190 C345,228 365,240 400,246 C430,251 460,254 490,256"
+          fill="none"/>
+        <!-- baseline dots marking peak maxima -->
+        <circle cx="235" cy="105" r="3.5" class="peak-dot"/>
+        <circle cx="325" cy="190" r="3.5" class="peak-dot"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section wrap">
+    <h2>About</h2>
+    <div class="section-body">
+      <p>I'm in my third year of a BSc in Applied Physics at DCU, finishing top of my class with strongest results in nuclear physics, relativity, and electromagnetism. I like physics best when it's in front of me as hardware — a vacuum line that either holds pressure or doesn't, a sensor that either gives clean data or noise.</p>
+      <p>That's what pulled me toward surface science and instrumentation: over the past year I've spent most of my project time building a thermally programmed desorption system from the ground up, alongside a handful of smaller programming and electronics projects made mostly out of curiosity.</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section wrap section-feature">
+    <h2>Research</h2>
+    <article class="feature-card">
+      <div class="feature-head">
+        <h3>Thermally Programmed Desorption System</h3>
+        <p class="feature-meta">Dublin City University · Jan – May 2026</p>
+      </div>
+      <p>An undergraduate research project built with a lecturer and a classmate: a working TPD rig for studying how molecules bind to and release from a surface as it's heated on a controlled ramp. I contributed 5–6 hours a week to the physical build.</p>
+      <ul class="feature-points">
+        <li>Designed and assembled the vacuum chamber and pumping arrangement</li>
+        <li>Built and tuned the sample heating stage for controlled temperature ramps</li>
+        <li>Took the system through design, assembly, and testing as an ongoing iteration, not a one-shot build</li>
+      </ul>
+      <p class="feature-note">A TPD spectrum — desorption rate plotted against temperature — is sketched above: each peak marks a binding site releasing its molecules at a characteristic temperature.</p>
+    </article>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section wrap">
+    <h2>Projects</h2>
+    <div class="project-list">
+
+      <article class="project-row">
+        <div class="project-index" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" class="pi-ring"/><path d="M12 20a8 8 0 1 1 16 0 8 8 0 0 1-16 0z" class="pi-atom"/><line x1="8" y1="12" x2="32" y2="28" class="pi-atom"/><line x1="8" y1="28" x2="32" y2="12" class="pi-atom"/></svg>
+        </div>
+        <div class="project-body">
+          <h3>Magnetic field &amp; gravity analyser</h3>
+          <p>A program that reads data from a magnetic sensor mounted on a swinging pendulum, then separates and plots the magnetic and gravitational contributions to its motion.</p>
+          <p class="project-stat"><span class="stat-num">90%</span> measurement accuracy against expected values</p>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-index" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><rect x="7" y="7" width="26" height="26" rx="2" class="pi-ring"/><line x1="14" y1="14" x2="14" y2="26" class="pi-atom"/><line x1="20" y1="10" x2="20" y2="30" class="pi-atom"/><line x1="26" y1="18" x2="26" y2="26" class="pi-atom"/></svg>
+        </div>
+        <div class="project-body">
+          <h3>Periodic table memorisation game</h3>
+          <p>Built with a small team for a hackathon: a Python game for drilling element names, symbols, and positions until they're automatic.</p>
+          <p class="project-stat"><span class="stat-num">15</span> players at the hackathon · <span class="stat-num">80/100</span> project grade · <span class="stat-num">20%</span> faster learning in testing</p>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-index" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M20 6 L34 30 L6 30 Z" class="pi-ring"/><line x1="20" y1="16" x2="20" y2="24" class="pi-atom"/><circle cx="20" cy="27" r="1.2" class="pi-atom" fill="currentColor"/></svg>
+        </div>
+        <div class="project-body">
+          <h3>Equation solver</h3>
+          <p>A small calculator that solves five categories of high-school-level equations — built to be genuinely useful rather than a coursework exercise.</p>
+          <p class="project-stat"><span class="stat-num">€30</span> raised in voluntary donations from people who used it</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section wrap">
+    <h2>Education</h2>
+
+    <div class="edu-block">
+      <div class="edu-head">
+        <h3>BSc Applied Physics — 3rd year</h3>
+        <p class="feature-meta">Dublin City University, Glasnevin</p>
+      </div>
+      <p class="edu-overall">Overall grade so far: <span class="mono">H1.1</span></p>
+
+      <table class="grades-table">
+        <caption>Previous year results, highest first</caption>
+        <thead>
+          <tr><th>Subject</th><th>Result</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Nuclear Physics and Relativity</td><td class="mono">100%</td></tr>
+          <tr><td>Electromagnetism</td><td class="mono">96%</td></tr>
+          <tr><td>Solid State Physics I</td><td class="mono">87%</td></tr>
+          <tr><td>Digital and Analogue Electronics</td><td class="mono">86%</td></tr>
+          <tr><td>Physics Laboratory IV (AP)</td><td class="mono">82%</td></tr>
+          <tr><td>Classical Mechanics</td><td class="mono">80%</td></tr>
+          <tr><td>Calculus of Several Variables &amp; Fourier Analysis</td><td class="mono">79%</td></tr>
+          <tr><td>Linear Algebra</td><td class="mono">79%</td></tr>
+          <tr><td>Quantum Physics</td><td class="mono">78%</td></tr>
+          <tr><td>Physics of Renewable Energy</td><td class="mono">72%</td></tr>
+          <tr><td>Advanced Programming</td><td class="mono">69%</td></tr>
+          <tr><td>Physics Laboratory III</td><td class="mono">64%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="edu-block edu-secondary">
+      <h3>Secondary school</h3>
+      <p>Leaving Certificate, CAO points: <span class="mono">511</span>. Higher level in Russian, Chemistry, and Maths.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section wrap">
+    <h2>Skills &amp; languages</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Laboratory &amp; instrumentation</h3>
+        <ul class="plain-list">
+          <li>Precision mechanical, electrical, and optical measurement</li>
+          <li>Arduino-based electronic prototyping</li>
+          <li>Reading and working with electronic schematics</li>
+          <li>Measurement uncertainty analysis</li>
+          <li>Technical writing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Computation &amp; data</h3>
+        <ul class="plain-list">
+          <li>Python — NumPy, SciPy, Matplotlib (intermediate)</li>
+          <li>C (basic)</li>
+          <li>Microsoft Excel (proficient), wider Office suite</li>
+          <li>Data analysis and visualisation</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <ul class="plain-list">
+          <li>English — C1</li>
+          <li>Russian — fluent</li>
+          <li>Ukrainian — fluent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEYOND THE LAB -->
+  <section id="beyond" class="section wrap">
+    <h2>Beyond the lab</h2>
+    <p class="section-body">Member of the DCU German Society. I build things with wood over the summer — including an electric guitar from scratch, which I play regularly — and read into the history of religion and philosophy in the gaps. I train MMA and lift most weeks, and enjoy helping friends work out their own training and diet plans.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section wrap section-contact">
+    <h2>Get in touch</h2>
+    <p class="section-body">Open to research placements, internships, and conversations about experimental physics — reach out any time.</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="mailto:andrii.chumak2@mail.dcu.ie">andrii.chumak2@mail.dcu.ie</a>
+      <a class="btn" href="https://linkedin.com/in/andrii-chumak-622855329" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>Andrii Chumak · Dublin, Ireland</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
