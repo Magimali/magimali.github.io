@@ -114,6 +114,16 @@ const translations = {
     ru: '<span class="stat-num">&euro;30</span> собрано в виде добровольных пожертвований от людей, которые им пользовались',
     uk: '<span class="stat-num">&euro;30</span> зібрано у вигляді добровільних пожертв від людей, які ним користувалися'
   },
+  "proj4.title": {
+    en: "VLF radio antenna",
+    ru: "Антенна для приёма ОНЧ-радиоволн",
+    uk: "Антена для приймання ДНЧ-радіохвиль"
+  },
+  "proj4.desc": {
+    en: "Built an antenna to pick up very-low-frequency radio waves linked to solar activity, along with the receiver circuit and the software used to analyse the collected data.",
+    ru: "Построил антенну для приёма радиоволн диапазона ОНЧ (сверхдлинные волны), связанных с солнечной активностью, а также схему приёмника и программное обеспечение для анализа собранных данных.",
+    uk: "Побудував антену для приймання радіохвиль діапазону ДНЧ (наддовгі хвилі), пов'язаних із сонячною активністю, а також схему приймача та програмне забезпечення для аналізу зібраних даних."
+  },
 
   "section.education.title": { en: "Education", ru: "Образование", uk: "Освіта" },
   "edu.degree": {
