@@ -93,9 +93,39 @@ h1, h2, h3 {
 }
 .site-nav a:hover { color: var(--teal-deep); border-bottom-color: var(--teal); }
 
+.lang-switch {
+  display: flex;
+  gap: 2px;
+  margin-left: 20px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.lang-switch button {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  padding: 5px 9px;
+  background: transparent;
+  border: none;
+  color: var(--ink-faint);
+  cursor: pointer;
+}
+.lang-switch button:hover { color: var(--teal-deep); }
+.lang-switch button[aria-pressed="true"] {
+  background: var(--teal-deep);
+  color: var(--paper);
+}
+
 @media (max-width: 560px) {
   .site-nav { gap: 14px; }
   .site-nav a { font-size: 0.82rem; }
+  .lang-switch { margin-left: 10px; }
+}
+
+@media (max-width: 480px) {
+  .header-row { flex-wrap: wrap; row-gap: 10px; }
+  .site-nav { order: 3; width: 100%; justify-content: space-between; }
+  .lang-switch { margin-left: 0; }
 }
 
 /* ---------- hero ---------- */
